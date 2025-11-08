@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Photo Gallery</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>My Photo Gallery</h1>
+    <p class="subtitle">Responsive, lazy-loaded gallery with lightbox</p>
+  </header>
+
+  <main class="gallery-wrap">
+    <div id="gallery" class="gallery">
+      <figure class="photo">
+        <img data-src="images/pexels-bess-hamiti-83687-36487.jpg" alt="Photo 1" class="lazy" loading="lazy">
+        <figcaption>Photo 1 caption</figcaption>
+      </figure>
+      <figure class="photo">
+        <img data-src="images/pexels-pixabay-45853.jpg" alt="Photo 2" class="lazy" loading="lazy">
+        <figcaption>Photo 2 caption</figcaption>
+      </figure>
+      <figure class="photo">
+        <img data-src="images/pexels-todd-trapani-488382-1535162.jpg" alt="Photo 3" class="lazy" loading="lazy">
+        <figcaption>Photo 3 caption</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lb-close" class="lb-close" aria-label="Close">✕</button>
+    <img id="lb-image" src="" alt=""/>
+    <div id="lb-caption" class="lb-caption"></div>
+  </div>
+
+  <footer class="site-footer">
+    <small>© Your Name • Simple static gallery</small>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
